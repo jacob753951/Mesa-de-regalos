@@ -1,0 +1,125 @@
+/* Fuente y colores románticos */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdf6f9;
+  color: #5a4e4d;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
+
+.contenedor {
+  background-color: #fff;
+  border: 2px solid #e8d6d1;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #d07c8a;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-direction: row;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d8b4a0;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #d07c8a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+button:hover {
+  background-color: #b86774;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fceeee;
+  border: 1px solid #e5c6c6;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+li button {
+  background-color: #e3868e;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* 📱 Responsive para tablets y celulares */
+@media (max-width: 768px) {
+  .formulario {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  li button {
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  button {
+    font-size: 15px;
+  }
+}
